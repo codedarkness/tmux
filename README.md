@@ -8,17 +8,17 @@ Prefix key = C-a
 
 Mouse support is on.
 
-| Keys		 | Action		   |
-| :------------- | :---------------------- |
-| <C-a> + |      | Split Window Horizontal |
-| <C-a> + -      | Split Window Vertical   |
-| <C-a> + t      | Clock (like screensaver |
-| <Alt> + Arrows | Switch Panels           |
-| <C-a> + 0-1    | Switch windows          |
-| <C-a> + w      | Shows windows list      |
-| <C-a> + r      | Reload config           |
-| <C-a> + c      | Create new window       |
-| <C-a> + ,      | Change name of window   |
-| <C-a> + x	 | Kill window (panel)	   |
+| Keys		         | Action		               |
+| :-------------   | :---------------------- |
+| \<C-a\> + \|     | Split Window Horizontal |
+| \<C-a\> + -      | Split Window Vertical   |
+| \<C-a\> + t      | Clock (like screensaver |
+| \<Alt\> + Arrows | Switch Panels           |
+| \<C-a\> + 0-1    | Switch windows          |
+| \<C-a\> + w      | Shows windows list      |
+| \<C-a\> + r      | Reload config           |
+| \<C-a\> + c      | Create new window       |
+| \<C-a\> + ,      | Change name of window   |
+| \<C-a\> + x   	 | Kill window (panel)	   |
 
 For more kybindings [tmux cheat sheet](https://tmuxcheatsheet.com/)
