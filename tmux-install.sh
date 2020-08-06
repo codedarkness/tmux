@@ -27,26 +27,37 @@ install-tmux() {
 	echo ""
 	sleep 2
 
+	while true; do
+		read -p " Install tmux [y - n] : " yn
+		case $yn in
+			[Yy]* )
+				if ! location="$(type -p "tmux")" || [ -z "tmux" ]; then
 
-	if ! location="$(type -p "tmux")" || [ -z "tmux" ]; then
+					# check if pacman is installed
+					if which pacman > /dev/null; then
 
-		# check if pacman is installed
-		if which pacman > /dev/null; then
+						sudo pacman -S --noconfirm tmux
 
-			sudo pacman -S --noconfirm --needed tmux
+					# check if apt is installed
+					elif which apt > /dev/null; then
 
-		fi
+						sudo apt install -y tmux
 
-		# check if apt is installed
-		if which apt > /dev/null; then
+					else
 
-			sudo apt install -y tmux
+						echo " Your system is not Arch or Debian Based System"
+					fi
 
-		fi
+					else
+						echo " Nothing to do! tmux is installed in your System"
+				fi ; break ;;
+			[Nn]* )
+				break ;;
+			* ) echo "Please answer yes or no." ;;
+		esac
+	done
 
-	else
-		echo " nothing to do!"
-	fi
+	echo ""
 }
 
 config-files() {
