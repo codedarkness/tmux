@@ -23,7 +23,8 @@
 
 install-tmux() {
 	echo ""
-	echo " Install tmux in Arch, Debian based systems"
+	echo " Install tmux"
+	echo " Arch Linux | Debian | Void Linux"
 	echo ""
 	sleep 2
 
@@ -34,18 +35,22 @@ install-tmux() {
 				if ! location="$(type -p "tmux")" || [ -z "tmux" ]; then
 
 					# check if pacman is installed
-					if which pacman > /dev/null; then
+					if which pacman > /dev/null 2>&1; then
 
 						sudo pacman -S --noconfirm tmux
 
 					# check if apt is installed
-					elif which apt > /dev/null; then
+					elif which apt > /dev/null 2>&1; then
 
 						sudo apt install -y tmux
 
+					# check if xbps is installed
+					elif which xbps-install > /dev/null 2>&1; then
+
+						sudo xbps-install -Sy tmux
 					else
 
-						echo " Your system is not Arch or Debian Based System"
+						echo " Your system is not compatible with this script..."
 					fi
 
 					else
@@ -106,7 +111,7 @@ until [ "$selection" = "0" ]; do
 	echo " a terminal multiplexer"
 	echo ""
 	echo " 1 - Install tmux"
-	echo " 2 - Copy (custom) config files"
+	echo " 2 - Copy (custom) files"
 	echo " 3 - Keybindings"
 	echo ""
 	echo " 0 - Exit"
