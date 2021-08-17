@@ -2,7 +2,7 @@
 
 tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached. Learn more about [tmux](https://github.com/tmux/tmux).
 
-![tmux - darknesscode](https://github.com/codedarkness/tmux/blob/master/config-files/tmux.png)
+![tmux - darknesscode](/config-files/tmux.png)
 
 Prefix key = C-a
 
