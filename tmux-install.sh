@@ -74,12 +74,6 @@ config-files() {
 	cp -ar config-files/configs/tmux.conf $HOME/.tmux.conf &&
 	echo " tmux.conf was copied" || echo " Upssss!!!"
 	echo ""
-
-	cp -ar config-files/configs/tmux-dev.sh $HOME/tmux-dev.sh &&
-	echo " custom tmux-dev was copied" || echo " It's better if you reformat your pc!!"
-	echo ""
-
-	echo " in your terminal run from home directory ./tmux-dev.sh"
 }
 
 keybindings() {
