@@ -17,7 +17,7 @@ Mouse support is on.
 | <C-a> + r      | Reload config           |
 | <C-a> + c      | Create new window       |
 | <C-a> + ,      | Change name of window   |
-| <C-a> + x	 | Kill window (panel)	   |
+| <C-a> + x	 	 | Kill window (panel)	   |
 
 For more kybindings [tmux cheat sheet](https://tmuxcheatsheet.com/)
 
