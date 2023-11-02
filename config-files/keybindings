@@ -1,12 +1,15 @@
 # Tmux
 
-tmux is a terminal multiplexer: it enables a number of terminals to be created, accessed, and controlled from a single screen. tmux may be detached from a screen and continue running in the background, then later reattached. Learn more about [tmux](https://github.com/tmux/tmux).
+tmux is a terminal multiplexer: 
+- It enables a number of terminals to be created, accessed, and controlled from a single screen. 
+- tmux may be detached from a screen and continue running in the background, then later reattached.
+- Learn more about [tmux](https://github.com/tmux/tmux).
 
-Prefix key = C-a
+Prefix key = C-u
 
 Mouse support is on.
 
-| Keys		 | Action		   |
+| Keys		     | Action		           |
 | :------------- | :---------------------- |
 | <C-a> + |      | Split Window Horizontal |
 | <C-a> + -      | Split Window Vertical   |
@@ -22,4 +25,3 @@ Mouse support is on.
 For more kybindings [tmux cheat sheet](https://tmuxcheatsheet.com/)
 
 press q to quit
-
